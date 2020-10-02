@@ -2,6 +2,7 @@
 
 namespace App\Exceptions;
 
+use GuzzleHttp\Exception\ClientException;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Validation\ValidationException;
@@ -49,6 +50,17 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Throwable $exception)
     {
-        return parent::render($request, $exception);
+        if ($exception instanceof HttpException) {
+            $statusCode = $exception->getStatusCode();
+            return response()->json([
+                'message' => $exception->getMessage(),
+            ], $statusCode);
+        } else if (config('app.debug')) {
+            return parent::render($request, $exception);
+        } else {
+            return response()->json([
+                'message' => 'Unknown server error.'
+            ], 500);
+        }
     }
 }
