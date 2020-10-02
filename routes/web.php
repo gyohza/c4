@@ -16,3 +16,7 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->get('/movies/upcoming', 'MovieController@upcoming');
+$router->get('/movies/top-rated', 'MovieController@topRated');
+$router->get('/movies/{movieId}', 'MovieController@show');
