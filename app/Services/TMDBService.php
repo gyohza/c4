@@ -3,7 +3,6 @@
 namespace App\Services;
 
 use App\Models\Movie;
-use Illuminate\Support\Facades\Validator;
 
 class TMDBService extends HttpService
 {
@@ -42,6 +41,9 @@ class TMDBService extends HttpService
     if (isset($videos['results']))
       $movie['videos'] = $videos['results'];
     
+    // Sort props since 'videos' gets pushed to the end
+    ksort($movie);
+
     return Movie::fromValidSingle($movie);
   }
 

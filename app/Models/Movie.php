@@ -10,7 +10,8 @@ class Movie extends Model
     public $fillable = [
         'popularity',
         'vote_count',
-        'video',
+        # Removed it to avoid confusion with the 'videos' prop
+        // 'video',
         'poster_path',
         'id',
         'adult',
@@ -40,7 +41,8 @@ class Movie extends Model
     public const RULES = [
         'popularity' => 'numeric',
         'vote_count' => 'integer',
-        'video' => 'boolean',
+        # Removed it to avoid confusion with the 'videos' prop
+        // 'video' => 'boolean',
         'poster_path' => ['regex:/\/?\w+\.(jpg|png|bmp|gif|tiff)/i'],
         'id' => 'required|integer',
         'adult' => 'boolean',
