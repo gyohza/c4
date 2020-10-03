@@ -20,3 +20,6 @@ $router->get('/', function () use ($router) {
 $router->get('/movies/upcoming', 'MovieController@upcoming');
 $router->get('/movies/top-rated', 'MovieController@topRated');
 $router->get('/movies/{movieId}', 'MovieController@show');
+
+$router->get('/genres', 'GenreController@index');
+$router->get('/genres/{genreId}', 'GenreController@show');

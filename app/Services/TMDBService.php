@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Models\Genre;
 use App\Models\Movie;
 
 class TMDBService extends HttpService
@@ -47,4 +48,17 @@ class TMDBService extends HttpService
     return Movie::fromValidSingle($movie);
   }
 
+  public function obtainGenres($params = [])
+  {
+    return Genre::fromValidArray(
+      $this->get('genre/list', $params)['genres']
+    );
+  }
+
+  public function obtainGenre(int $id)
+  {
+    return Genre::fromValidSingle(
+      $this->get("genre/$id")->json()
+    );
+  }
 }
