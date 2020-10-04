@@ -2,7 +2,70 @@
 
 C4 placement test.
 
-## Guidelines
+## About the applicant
+
+- [X] Git
+    * Perform all common operations with ease. More obscure commands (such as `update-index`) only by looking up reference;
+    * Try to follow consistent branching and flow according to each project's definition;
+    * Mainly operate with the aid of [GitKraken](https://www.gitkraken.com/), but can deal with bash commands just fine;
+    * Also the other day-to-day issues such as conflict resolving, setting up PAT in a remote environment, webhooks, among others. 
+- [X] React/Vue/Angular
+    * Angular 2+ - good deal of experience (also my go-to frontend framework when starting a random project);
+        * Includes Angular Material and Sass.
+    * React - have had contact with it, but not anywhere near an expert. 
+- [ ] Agile
+    * Worked with Scrum for a period, but not solid enough to declare it "mastered".
+- [X] Clean Code
+    * I'd like to believe that it's one of my competences. Sure I don't master all the standards and design patterns, but when I do, I become an evangelist for it, even if some of it doesn't make sense to me. A standard is a standard, right?
+    * Refactoring bad code makes me roll my eyes and perform numerous mental facepalms, but it's a rewarding job;
+    * Whenever I get too deep into a project, I spend quite some time (unless explicitly told not to) in housekeeping and try to keep an eye for antipatterns.
+- [X] Linux
+    * I usually code from a Windows environment, but I can bash my way in a Linux environment just fine. Most of my Tux experience comes from handling AWS EC2s from PuTTY and VS Code (I set it up with either SSH FS or Remote - SSH extensions).
+- [X] MySQL/PostgreSQL
+    * About MySQL: YESSSSSSS, and especially 8.0. Regex replaces and row numbering were long overdue;
+    * PostgreSQL: worked with it once. Not my favorite, but no biggie;
+    * SQL Server: also have worked with it, but it's honestly my least favorite thing 😂. Try querying `SELECT (1 = 1) = (1 = 1)` and you'll see what I mean!
+- [X] PHP
+    * Somewhat a little more verbose than JS, some inelegant procedural stuff, but those can't tone down my fanboyishness towards PHP;
+    * Done many things the hard way: reinventing the wheel. Good for learning, foolish for productivity. Nowadays I'm more "Packagist and Composer to the rescue";
+    * PHP is my go-to backend language. I code with VSCode + Intellephense Premium.
+- [ ] Python/Bash Script
+    - [ ] Python
+    - [X] Bash
+        * All common operations (such as navigation and permissions) covered;
+        * At one point I was pretty used to scripting in a daily basis (`.sh` files). I think I can still handle them well;
+        * I try creating scripts in Windows through Git Bash to avoid syntax problems when registering them into the apps.
+- [X] Object Oriented
+    * All things inheritance, abstraction, visibility, static/constants covered;
+    * Also composition... I'm a trait avoider, but use it sometimes;
+    * I wish PHP had generics 😥.
+- [X] Frameworks (Zend Framework 2, Laravel, Silex or alike)
+    * Been working on Yii for half a year;
+    * Been trying to create a few side projects in Lumen to get into the Laravel world (this very application is one of such attempts).
+- [X] API
+    * REST, mainly;
+    * Meaning to learn GraphQL, but haven't had the opportunity to focus on it, yet.
+- [ ] Unit Tests
+    * Know the concept, what it's for and roughly a bit of its scope and naming conventions, but never implemented it.
+- [ ] Docker
+     It's in my list of things that I should definitely learn. 
+- [X] DevOps
+    * Mainly Azure DevOps.
+- [X] Self-learn
+    * I have self-taught written all over me. Started coding that way (I'll save the story for later);
+    * Google, StackOverflow and YouTube are great workmates.
+- [X] Cloud Computing (AWS)
+    * Not an AWS whiz, but I've been working with it for a while, now:
+        * Creating/maintaining EC2 instances, ElasticIPs and connections;
+        * Creating/maintaining S3 buckets and feeding data into them;
+        * Creating/maintaining RDS databases;
+        * Consuming services such as Textract or SES inside applications.
+- [X] Critical Thinking
+    * I must be modest to state that I try. At a corporate/professional level, at a personal, social and political level;
+    * The first shot at critical thinking one should make is that they don't know everything. That said, that which you _do_ know, can and should be harnessed to predict possible outcomes. Projects crumble because of overlooking variables;
+    * The other and most valuable insight for me is that everything is part of a complex system, especially so since it involves humans and their own personalities and aspirations. It's important to understand that this does *not* give us a better understanding of outcomes and facts, but a better understanding of the magnitude of the domain things that we do _not_ understand, have no control of and hardly ever have a say in. In a more personal level, I have had trouble in accepting defeat and admitting to my mistakes for most of my past life. I believe adulthood, critical thinking and enlightenment are at their finest when we realize it's not wrong to err, but not to learn and evolve from it.
+
+## Test guidelines
 
 <details>
    <summary>
