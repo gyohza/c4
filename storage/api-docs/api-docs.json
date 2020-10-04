@@ -88,6 +88,132 @@
                     }
                 }
             }
+        },
+        "/movies/upcoming": {
+            "get": {
+                "tags": [
+                    "movie"
+                ],
+                "summary": "Return a list of upcoming movies.",
+                "description": "Retrieve all upcoming movies.",
+                "operationId": "getUpcomingMovies",
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "example": 1
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Movies successfully retrieved.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "data": {
+                                            "description": "Display a listing of upcoming movies.",
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/components/schemas/Movie"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/movies/top-rated": {
+            "get": {
+                "tags": [
+                    "movie"
+                ],
+                "summary": "Return a list of top rated movies.",
+                "description": "Retrieve all top rated movies.\n               Don't trust a list that doesn't feature Pontypool, though.",
+                "operationId": "getTopRatedMovies",
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "example": 1
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Movies successfully retrieved.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "data": {
+                                            "description": "Display a listing of top rated movies.",
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/components/schemas/Movie"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/movies/{movieId}": {
+            "get": {
+                "tags": [
+                    "movie"
+                ],
+                "summary": "Return a given movie.",
+                "description": "Retrieve a movie by its ID.",
+                "operationId": "getMovieById",
+                "parameters": [
+                    {
+                        "name": "movieId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "example": 23963
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Movie successfully retrieved.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "data": {
+                                            "description": "Obtain a particular movie.",
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/components/schemas/Movie"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "components": {
@@ -115,7 +241,89 @@
                 "required": [
                     "id",
                     "name"
-                ]
+                ],
+                "properties": {
+                    "popularity": {
+                        "type": "number"
+                    },
+                    "vote_count": {
+                        "type": "integer"
+                    },
+                    "poster_path": {
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "integer"
+                    },
+                    "adult": {
+                        "type": "boolean"
+                    },
+                    "backdrop_path": {
+                        "type": "string"
+                    },
+                    "original_language": {
+                        "type": "string"
+                    },
+                    "original_title": {
+                        "type": "string"
+                    },
+                    "genre_ids": {
+                        "type": "array",
+                        "items": {
+                            "type": "integer"
+                        }
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "vote_average": {
+                        "type": "number"
+                    },
+                    "overview": {
+                        "type": "string"
+                    },
+                    "release_date": {
+                        "type": "string"
+                    },
+                    "belongs_to_collection": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "Video": {
+                "title": "Video",
+                "description": "Video model",
+                "required": [
+                    "id"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "iso_639_1": {
+                        "type": "string"
+                    },
+                    "iso_3166_1": {
+                        "type": "string"
+                    },
+                    "key": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "site": {
+                        "type": "string"
+                    },
+                    "size": {
+                        "type": "number"
+                    },
+                    "type": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
             }
         }
     }
