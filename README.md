@@ -8,6 +8,7 @@ C4 placement test.
    <summary>
        Guidelines and constraints of this test, as established by C4. _(No one was blown up in the making of this app.)_
    </summary>
+    
 ### DESCRIPTION
 You have been tasked with creating an API module that will connect to another API.
 The purpose of the module is to list the movies of this API in a personalized way.
@@ -63,6 +64,7 @@ Key aspects that will be validated:
     <summary>
         Original auto-generated Lumen `README.md` file.
     </summary>
+    
 [![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
 [![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
 [![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
