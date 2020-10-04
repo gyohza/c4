@@ -7,7 +7,17 @@ use App\Services\TMDBService;
 
 class Controller extends BaseController
 {
-    //
+    /**
+     * @OA\Info(
+     *   title="C4 TMDB API",
+     *   version="1.0",
+     *   @OA\Contact(
+     *     email="dan.nagaoka.0@gmail.com",
+     *     name="Daniel Nagaoka"
+     *   )
+     * )
+     */
+
     /**
      * Service to consume TMDB API.
      * @var TMDBService
