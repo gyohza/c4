@@ -1,0 +1,122 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "C4 TMDB API",
+        "contact": {
+            "name": "Daniel Nagaoka",
+            "email": "dan.nagaoka.0@gmail.com"
+        },
+        "version": "1.0"
+    },
+    "paths": {
+        "/genres": {
+            "get": {
+                "tags": [
+                    "genre"
+                ],
+                "summary": "Return a list of all genres.",
+                "description": "Retrieve all available genres.",
+                "operationId": "getGenres",
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "example": 1
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Genres successfully retrieved.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "data": {
+                                            "description": "Display a listing of the resource.",
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/components/schemas/Genre"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/genres/{genreId}": {
+            "get": {
+                "tags": [
+                    "genre"
+                ],
+                "summary": "Return a given genre.",
+                "description": "Retrieve a genre based on a provided ID.",
+                "operationId": "getGenreById",
+                "parameters": [
+                    {
+                        "name": "genreId",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "example": "27"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Genre successfully retrieved.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#/components/schemas/Genre"
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Genre": {
+                "title": "Genre",
+                "description": "Genre model",
+                "required": [
+                    "id",
+                    "name"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "name": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "Movie": {
+                "title": "Movie",
+                "description": "Movie model",
+                "required": [
+                    "id",
+                    "name"
+                ]
+            }
+        }
+    }
+}
