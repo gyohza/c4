@@ -4,6 +4,11 @@ C4 placement test.
 
 ## Guidelines
 
+<details>
+   <summary>
+       Guidelines and constraints of this test, as established by C4. (No one was blown up in the making of this app.)
+   </summary>
+    
 ### DESCRIPTION
 You have been tasked with creating an API module that will connect to another API.
 The purpose of the module is to list the movies of this API in a personalized way.
@@ -30,8 +35,7 @@ You should see this project as an opportunity to create an app following modern 
 best practices, but also feel free to use your own app architecture preferences (coding
 standards, code organization, third-party libraries, etc).
 
-A TMDb API key is already available so you don't need to request your own:
-`1f54bd990f1cdfb230adb312546d765d`
+A TMDb API key is already available so you don't need to request your own: _`<<<suppressed>>>`_
 
 The API documentation and examples of use can be found here:
 
@@ -52,9 +56,15 @@ Key aspects that will be validated:
 - Version Control;
 - Chosen Architecture;
 - Features running correctly;
+</details>
 
 ## Lumen PHP Framework
 
+<details>
+    <summary>
+        Original auto-generated Lumen `README.md` file.
+    </summary>
+    
 [![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
 [![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
 [![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
@@ -77,3 +87,4 @@ If you discover a security vulnerability within Lumen, please send an e-mail to 
 ### License
 
 The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+</details>
