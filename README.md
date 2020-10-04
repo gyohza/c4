@@ -6,7 +6,7 @@ C4 placement test.
 
 <details>
    <summary>
-       Guidelines and constraints of this test, as established by C4. _(No one was blown up in the making of this app.)_
+       Guidelines and constraints of this test, as established by C4. (No one was blown up in the making of this app.)
    </summary>
     
 ### DESCRIPTION
