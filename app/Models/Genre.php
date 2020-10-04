@@ -5,11 +5,35 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Validator;
 
+/**
+ * @OA\Schema(
+ *     description="Genre model",
+ *     title="Genre",
+ *     required={"id", "name"}
+ * )
+ */
 class Genre extends Model
 {
+    #region props
+
+    /**
+     * @OA\Property(type="integer")
+     * @var int
+     */
+    public int $id;
+
+    /**
+     * @OA\Property(type="string")
+     * @var string
+     */
+    public string $name;
+
+    #endregion
+
     public $fillable = [
         'id',
         'name',
+        
     ];
 
     public const RULES = [
