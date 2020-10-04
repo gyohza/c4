@@ -3,22 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Resources\GenreResource;
-use App\Services\TMDBService;
 use Illuminate\Http\Request;
 
 class GenreController extends Controller
 {
-    /**
-     * Service to consume TMDB API.
-     * @var TMDBService
-     */
-    public TMDBService $tmdb;
-
-    public function __construct(TMDBService $tmdbService)
-    {
-        $this->tmdb = $tmdbService;
-    }
-
     /**
      * Display a listing of the resource.
      *
