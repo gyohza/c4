@@ -196,7 +196,7 @@ Key aspects that will be validated:
 
 <details>
     <summary>
-        Original auto-generated Lumen `README.md` file.
+        Original auto-generated Lumen <code>README.md</code> file.
     </summary>
     
 [![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
