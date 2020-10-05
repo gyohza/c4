@@ -1,8 +1,15 @@
-# C4
+[linkedin]: https://www.linkedin.com/in/daninagaoka/
+[stackoverflow]: https://stackoverflow.com/users/12015105/gyohza
+[hackerrank]: https://www.hackerrank.com/gyohza
 
-C4 placement test.
+# C4 Skill Assessment
+
+This project aims implement a simple GET API to consume and retrieve information from [The Movie Database](https://www.themoviedb.org/).
 
 ## About the applicant
+
+> ### Daniel Nagaoka
+> #### [`LinkedIn`][linkedin] ▪ [`Stack Overflow`][stackoverflow] ▪ [`HackerRank`][hackerrank]
 
 - [X] Git
     * Perform all common operations with ease. More obscure commands (such as `update-index`) only by looking up reference;
