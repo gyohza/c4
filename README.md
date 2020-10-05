@@ -38,7 +38,7 @@ Its API docs are powered by [Swagger] (and huge props to [Swagger-Lume], too).
 
 **Note:** Some of the above are already included by default in bundles such as [XAMPP].
 
-### Running project instance
+### Installation steps
 
 #### 1. Clone the repository locally:
 
