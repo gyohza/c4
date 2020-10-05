@@ -18,9 +18,9 @@
 
 # C4 Skill Assessment
 
-This project aims implement a simple GET API to consume and retrieve information from [The Movie Database][tmdb].
+This project aims to implement a simple GET API to consume and retrieve information from [The Movie Database][tmdb].
 
-To check the **skill requirement checklist** and my remarks to each item, [**click here**][aboutme].
+To check the **skill requirements checklist** and my remarks to each item, [**click here**][aboutme].
 
 ## Installation guide
 
@@ -54,7 +54,7 @@ cd c4 && composer install
 
 #### 3. Copy the `.env.example` file and rename the copy to `.env`;
 
-#### 4. Inside the `.env` file, provide a valid [TMDB API key] to `TMDB_API_KEY`. It should look like so:
+#### 4. Inside the `.env` file, provide a valid [TMDB API key][tmdb.requestkey] to `TMDB_API_KEY`. It should look like so:
 
 ```bash
 TMDB_API_KEY=a354bd666f1cddab30adb312546d7687
@@ -79,7 +79,7 @@ php -S localhost:8000 -t public
     * Perform all common operations with ease. More obscure commands (such as `update-index`) only by looking up reference;
     * Try to follow consistent branching and flow according to each project's definition;
     * Mainly operate with the aid of [GitKraken][gitkraken], but can deal with bash commands just fine;
-    * Also the other day-to-day issues such as conflict resolving, setting up PAT in a remote environment, webhooks, among others. 
+    * Also a bunch other day-to-day issues such as conflict resolving, setting up PAT in a remote environment, webhooks, among others. 
 - [X] React/Vue/Angular
     * Angular 2+ - good deal of experience (also my go-to frontend framework when starting a random project);
         * Includes Angular Material and Sass.
@@ -112,7 +112,7 @@ php -S localhost:8000 -t public
     * I wish PHP had generics 😥.
 - [X] Frameworks (Zend Framework 2, Laravel, Silex or alike)
     * Been working on Yii for half a year;
-    * Been trying to create a few side projects in Lumen to get into the Laravel world (this very application is one of such attempts).
+    * Been trying to create a few side projects in Lumen to get into the Laravel world (this very application is one such attempt).
 - [X] API
     * REST, mainly;
     * Meaning to learn GraphQL, but haven't had the opportunity to focus on it, yet.
