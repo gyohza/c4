@@ -36,7 +36,7 @@ Its API docs are powered by [Swagger] (and huge props to [Swagger-Lume], too).
 * PDO PHP Extension
 * Mbstring PHP Extension
 
-**Note:** Some of the above already are included by default in bundles such as [XAMPP].
+**Note:** Some of the above are already included by default in bundles such as [XAMPP].
 
 ### Running project instance
 
