@@ -55,7 +55,7 @@ This project aims implement a simple GET API to consume and retrieve information
 - [ ] Unit Tests
     * Know the concept, what it's for and roughly a bit of its scope and naming conventions, but never implemented it.
 - [ ] Docker
-     It's in my list of things that I should definitely learn. 
+    * It's in my list of things that I should definitely learn. 
 - [X] DevOps
     * Mainly Azure DevOps.
 - [X] Self-learn
