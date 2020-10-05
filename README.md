@@ -1,20 +1,84 @@
+<!-- About me links -->
 [linkedin]: https://www.linkedin.com/in/daninagaoka/
-[stackoverflow]: https://stackoverflow.com/users/12015105/gyohza
+[stack overflow]: https://stackoverflow.com/users/12015105/gyohza
 [hackerrank]: https://www.hackerrank.com/gyohza
+
+<!-- References -->
+[tmdb]: https://www.themoviedb.org/
+[tmdb.requestkey]: https://www.themoviedb.org/settings/api/request
+[lumen]: https://lumen.laravel.com/
+[swagger]: https://swagger.io/
+[swagger-lume]: https://packagist.org/packages/darkaonline/swagger-lume
+[composer]: https://getcomposer.org/
+[gitkraken]: https://www.gitkraken.com/
+[xampp]: https://www.apachefriends.org/index.html
+
+<!-- Page sections -->
+[aboutme]: #about-the-applicant
 
 # C4 Skill Assessment
 
-This project aims implement a simple GET API to consume and retrieve information from [The Movie Database](https://www.themoviedb.org/).
+This project aims implement a simple GET API to consume and retrieve information from [The Movie Database][tmdb].
+
+To check the **skill requirement checklist** and my remarks to each item, [**click here**][aboutme].
+
+## Installation guide
+
+This application is powered by the [Lumen microframework][lumen] by Laravel.
+
+Its API docs are powered by [Swagger] (and huge props to [Swagger-Lume], too).
+
+### Requirements
+
+* [Composer]
+* PHP >= 7.3
+* OpenSSL PHP Extension
+* PDO PHP Extension
+* Mbstring PHP Extension
+
+> Some of the above already are included by default in bundles such as [XAMPP].
+
+### Running project instance
+
+#### 1. Clone the repository locally:
+
+```bash
+git clone https://github.com/gyohza/c4.git
+```
+
+#### 2. Install necessary packages with Composer:
+
+```bash
+cd c4 && composer install
+```
+
+#### 3. Copy the `.env.example` file and rename the copy to `.env`;
+
+#### 4. Inside the `.env` file, provide a valid [TMDB API key] to `TMDB_API_KEY`. It should look like so:
+
+```bash
+TMDB_API_KEY=a354bd666f1cddab30adb312546d7687
+```
+
+#### 5. Serve the instance locally by running:
+
+```bash
+php -S localhost:8000 -t public
+```
+
+#### 6. You can now access the [**API docs**](http://localhost:8000/api/documentation) for this application for reference and testing.
+
+**Note:** whenever serving this application by dumping the repository into the Apache hosting folders (such as `/var/www/html` or `C:/xampp/htdocs`), you need to redirect all traffic to the `/public` directory.
 
 ## About the applicant
 
 > ### Daniel Nagaoka
-> #### [`LinkedIn`][linkedin] ▪ [`Stack Overflow`][stackoverflow] ▪ [`HackerRank`][hackerrank]
+> #### [`LinkedIn`][linkedin] ▪ [`Stack Overflow`][stack overflow] ▪ [`HackerRank`][hackerrank]
 
 - [X] Git
     * Perform all common operations with ease. More obscure commands (such as `update-index`) only by looking up reference;
     * Try to follow consistent branching and flow according to each project's definition;
-    * Mainly operate with the aid of [GitKraken](https://www.gitkraken.com/), but can deal with bash commands just fine;
+    * Mainly operate with the aid of [GitKraken][gitkraken], but can deal with bash commands just fine;
     * Also the other day-to-day issues such as conflict resolving, setting up PAT in a remote environment, webhooks, among others. 
 - [X] React/Vue/Angular
     * Angular 2+ - good deal of experience (also my go-to frontend framework when starting a random project);
